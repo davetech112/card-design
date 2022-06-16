@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: black;
+        display: flex;
+        height: 90vh;
+      }
+      main {
+        display: grid;
+        grid-template-rows: 150px;
+        grid-template-areas:
+          "a a b"
+          "c d d"
+          "c f f";
+        gap: 10px;
+        width: 50%;
+        margin: auto;
+      }
+
+      main div {
+        padding: 3em;
+      }
+      .a {
+        background: blue;
+
+        grid-area: a;
+      }
+      .b {
+        background: yellow;
+        grid-area: b;
+      }
+      .c {
+        background: orange;
+
+        grid-area: c;
+      }
+      .d {
+        background: red;
+
+        grid-area: d;
+      }
+
+      .f {
+        background: red;
+
+        grid-area: f;
+      }
+
+      .bt-5 {
+        color: white;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="a"></div>
+      <div class="b"></div>
+      <div class="c"></div>
+      <div class="d"></div>
+      <div class="f"></div>
+    </main>
+    <div>
+      <a class="bt-5" href="/index.html">FLEX </a>
+    </div>
+  </body>
+</html>
